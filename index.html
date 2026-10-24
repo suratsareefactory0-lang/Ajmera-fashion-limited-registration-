@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Saree Factory | Registration</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f6f7fb;color:#202124}
+header{background:linear-gradient(135deg,#8e155f,#c62868);color:#fff;text-align:center;padding:28px 16px}
+header h1{margin:0 0 8px;font-size:29px} header p{margin:0;font-size:15px}
+main{max-width:760px;margin:20px auto;padding:0 14px}
+.card{background:#fff;border-radius:18px;padding:22px;margin-bottom:18px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+h2{color:#8e155f;margin-top:0}.info{line-height:1.75}
+.note{background:#fff6df;border-left:5px solid #f0a000;padding:12px;border-radius:8px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input,textarea{width:100%;padding:13px;border:1px solid #cbd2dc;border-radius:10px;font-size:16px}
+textarea{min-height:90px;resize:vertical}
+.qr{text-align:center;background:#fafafa;padding:18px;border-radius:14px}
+.qr img{width:min(320px,90%);height:auto;border-radius:8px}
+.fee{font-size:22px;font-weight:800;margin:12px}
+button{width:100%;padding:14px;border:0;border-radius:11px;font-size:17px;font-weight:800;cursor:pointer}
+.submit{background:#8e155f;color:white}.whatsapp{background:#25d366;color:white;margin-top:12px}
+.small{font-size:13px;color:#697386;line-height:1.5}
+.error{display:none;color:#b42318;margin-top:8px;font-size:14px}
+.success{display:none;background:#ecfdf3;color:#05603a;padding:12px;border-radius:10px;margin-top:12px}
+.contact{font-size:20px;font-weight:800}
+footer{text-align:center;color:#6b7280;padding:8px 15px 28px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>🔰 SURAT SAREE FACTORY 🔰</h1>
+<p>Work From Home Registration</p>
+</header>
+
+<main>
+<section class="card">
+<h2>कंपनी की जानकारी</h2>
+<div class="info">
+<p><strong>काम:</strong> साड़ियों पर कांच और सितारे चिपकाने का काम करना है केवल। साड़ियों पर डिजाइन पहले से ही बनी हुई मिलेगी जिस पर आपको कांच और सितारे चिपकाने हैं।</p>
+<p><strong>कार्य:</strong> 1 महीने में 50 साड़ी कंप्लीट करनी है।</p>
+<p><strong>💵 सैलरी / Payment:</strong> ₹23,500</p>
+<p><strong>NOTE 1:</strong> पार्सल रजिस्ट्रेशन होने के 3 से 5 दिन के अंदर आपके एड्रेस पर पहुंचा दिया जाएगा।</p>
+<p><strong>Company Address:</strong><br>Surana 101 Tower, 7001, Sahara Darwaja Ring Rd, Sahara Darwaja, New Textile Market, Surat, Gujarat 395003</p>
+<p><strong>All India delivery available hai.</strong></p>
+</div>
+<div class="note">रजिस्ट्रेशन से पहले सभी शुल्क और कंपनी की शर्तें ध्यान से पढ़ें।</div>
+</section>
+
+<section class="card">
+<h2>संपर्क करें</h2>
+<p>किसी भी सवाल या सहायता के लिए payment से पहले भी WhatsApp पर संपर्क कर सकते हैं।</p>
+<p class="contact">WhatsApp: 9252159860</p>
+<a href="https://wa.me/919252159860" target="_blank" style="text-decoration:none">
+<button class="whatsapp" type="button">WhatsApp पर संपर्क करें</button>
+</a>
+</section>
+
+<section class="card">
+<h2>Registration Form</h2>
+<form id="form">
+<label>पूरा नाम *</label><input id="name" required>
+<label>मोबाइल नंबर *</label><input id="mobile" required inputmode="numeric" maxlength="10">
+<label>पूरा पता *</label><textarea id="address" required></textarea>
+<label>पिनकोड *</label><input id="pincode" required inputmode="numeric" maxlength="6">
+<label>UTR / Transaction ID *</label><input id="utr" required placeholder="Payment के बाद UTR डालें">
+<p class="small">UTR submit करना payment की स्वतः पुष्टि नहीं करता। Transaction की वास्तविक verification अलग से की जानी चाहिए।</p>
+<button class="submit" type="submit">UTR Submit करें</button>
+<div id="error" class="error"></div>
+<div id="success" class="success">UTR submit हो गया। अब WhatsApp पर registration details भेज सकते हैं।</div>
+<button id="wa" class="whatsapp" type="button" style="display:none">WhatsApp पर Details भेजें</button>
+</form>
+</section>
+
+<section class="card">
+<h2>Registration Payment</h2>
+<div class="qr">
+<p><strong>QR Code से Registration Fee का payment करें</strong></p>
+<img src="payment-qr.jpg" alt="Payment QR Code">
+<div class="fee">Registration Fee: ₹500</div>
+<p class="small">Payment करने के बाद ऊपर UTR / Transaction ID दर्ज करें।</p>
+</div>
+</section>
+
+<section class="card">
+<h2>महत्वपूर्ण जानकारी</h2>
+<p class="info">रजिस्ट्रेशन कंप्लीट होने के 30 मिनट बाद कंपनी से 50% एडवांस सैलरी और कुरियर चार्ज मिलने की जानकारी दी गई है।</p>
+<p><strong>Courier charge are temporary.</strong></p>
+</section>
+</main>
+
+<footer>© Surat Saree Factory</footer>
+
+<script>
+const form=document.getElementById("form"), error=document.getElementById("error"),
+success=document.getElementById("success"), wa=document.getElementById("wa");
+let data=null;
+form.addEventListener("submit",function(e){
+ e.preventDefault(); error.style.display="none";
+ const name=document.getElementById("name").value.trim();
+ const mobile=document.getElementById("mobile").value.trim();
+ const address=document.getElementById("address").value.trim();
+ const pincode=document.getElementById("pincode").value.trim();
+ const utr=document.getElementById("utr").value.trim();
+ if(!/^\d{10}$/.test(mobile)){error.textContent="सही 10 अंकों का मोबाइल नंबर डालें।";error.style.display="block";return}
+ if(!/^\d{6}$/.test(pincode)){error.textContent="सही 6 अंकों का पिनकोड डालें।";error.style.display="block";return}
+ if(utr.length<6){error.textContent="Payment के बाद सही UTR / Transaction ID डालें।";error.style.display="block";return}
+ data={name,mobile,address,pincode,utr}; success.style.display="block"; wa.style.display="block";
+});
+wa.addEventListener("click",function(){
+ if(!data)return;
+ const message=`SURAT SAREE FACTORY - Registration
+
+नाम: ${data.name}
+मोबाइल: ${data.mobile}
+पता: ${data.address}
+पिनकोड: ${data.pincode}
+UTR / Transaction ID: ${data.utr}
+
+मैंने payment के बाद UTR submit किया है। कृपया मेरी registration details review करें।`;
+ window.open("https://wa.me/919252159860?text="+encodeURIComponent(message),"_blank");
+});
+</script>
+</body>
+</html>
